@@ -958,9 +958,10 @@
 
 
 <h1 id="openweather_api">OpenWeather API<a class="headerlink" href="#openweather_api" title="Permanent link">#</a></h1>
-<p>{% hint style="info" %}
-<strong>About this page</strong>\
-This is my version of the public and official documentation of Openweather - <a href="https://docs.openweather.co.uk/api/one-call-3">One Call API 3.0</a>.  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.&#x20;</p>
+<div class="admonition info">
+<p class="admonition-title">About this page</p>
+<p>This is my version of the public and official documentation of Openweather - <a href="https://docs.openweather.co.uk/api/one-call-3">One Call API 3.0</a>.  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.</p>
+</div>
 <p _="%" endhint="endhint">If you want to create the product or project documentation your users will love, or improve the one you're already have, <a href="https://www.linkedin.com/in/javier-hernandez-fernandez/">drop me a message!</a></p>
 <h2 id="reference_documentation">Reference Documentation<a class="headerlink" href="#reference_documentation" title="Permanent link">#</a></h2>
 <p><strong>OpenWeather - One Call 3.0 API provides the following information:</strong></p>
@@ -975,14 +976,18 @@ This is my version of the public and official documentation of Openweather - <a 
 <table><thead><tr><th width="196">Endpoint</th><th width="283">Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
 <p><strong>One Call API 3.0 data</strong> is available in JSON, XML, or HTML format.</p>
-<p _="%" endhint="endhint">{% hint style="warning" %}
-If you are using Dark Sky API, check our easy-to-follow<a href="https://openweathermap.org/darksky-openweather-3"> migration process.</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Dark Sky API users</p>
+<p>If you are using Dark Sky API, check our easy-to-follow<a href="https://openweathermap.org/darksky-openweather-3"> migration process.</a></p>
+</div>
 <h3 id="api_keys_and_default_api_calls"><em>API Keys and Default API Calls</em><a class="headerlink" href="#api_keys_and_default_api_calls" title="Permanent link">#</a></h3>
 <p><strong>You can generate as many API keys as needed for your subscription.</strong> We track the total usage from all of them.</p>
 <p><strong>One Call API 3.0 sets a default limit of 2000 API calls per day</strong>. If you need to change this limit, please check the information in the <a href="https://home.openweathermap.org/subscriptions">"your account billing plans"</a> tab and update the standard settings. For more information, read our documentation page.</p>
 <h3 id="resources_endpoints_and_methods">Resources: Endpoints and Methods<a class="headerlink" href="#resources_endpoints_and_methods" title="Permanent link">#</a></h3>
-<p _="%" endhint="endhint">{% hint style="info" %}
-Please note that One Call 3.0 is included in the "One Call by Call" subscription <em>ONLY</em>. <a href="https://openweathermap.org/price">Learn more</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">One Call 3.0 availability</p>
+<p>Please note that One Call 3.0 is included in the "One Call by Call" subscription <em>ONLY</em>. <a href="https://openweathermap.org/price">Learn more</a>.</p>
+</div>
 <p><strong>The root URL for the API</strong> is <a href="https://api.openweathermap.org/data/3.0/opencall">https://api.openweathermap.org/data/3.0/opencall</a>. In the following sections you will learn more about the One Call API 3.0 methods and endpoints.</p>
 <h4 id="onecall"><em><strong><code>/onecall</code></strong></em><a class="headerlink" href="#onecall" title="Permanent link">#</a></h4>
 <p><em>Current and forecast data.</em></p>
@@ -1760,8 +1765,10 @@ Please note that One Call 3.0 is included in the "One Call by Call" subscription
 <table><thead><tr><th width="198">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/onecall</code></td><td><a href="https://openweathermap.org/api/one-call-3#current"><strong>Current weather and forecasts:</strong></a></td><td><ul><li>Minute forecast for 1 hour</li><li>Hourly forecast for 48 hours</li><li>Daily forecast for 8 days</li></ul></td></tr><tr><td><code>/timemachine</code></td><td><a href="https://openweathermap.org/api/one-call-3#history"><strong>Weather data for any timestamp</strong></a></td><td>45 years historical archive and 4 days ahead forecast.</td></tr><tr><td><code>/day_summary</code></td><td><a href="https://openweathermap.org/api/one-call-3#history_daily_aggregation"><strong>Daily aggregation</strong></a></td><td>Daily agreggation of weather data for 45 years archive and 1.5 years ahead forecast.</td></tr><tr><td><code>/overview</code></td><td><a href="https://openweathermap.org/api/one-call-3#weather_overview"><strong>Weather overview</strong></a></td><td>Weather overview with a human-readable weather summary for today and tomorrow's forecast, utilizing OpenWeather AI technologies.</td></tr></tbody></table>
 
 <p><strong>One Call API 3.0 data</strong> is available in JSON, XML, or HTML format.</p>
-<p _="%" endhint="endhint">{% hint style="warning" %}
-If you are using Dark Sky API, check our easy-to-follow<a href="https://openweathermap.org/darksky-openweather-3"> migration process.</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Dark Sky API users</p>
+<p>If you are using Dark Sky API, check our easy-to-follow<a href="https://openweathermap.org/darksky-openweather-3"> migration process.</a>  </p>
+</div>
 <h3 id="api_keys_and_default_api_calls_1"><em>API Keys and Default API Calls</em><a class="headerlink" href="#api_keys_and_default_api_calls_1" title="Permanent link">#</a></h3>
 <p><strong>You can generate as many API keys as needed for your subscription.</strong> We track the total usage from all of them.</p>
 <p><strong>One Call API 3.0 sets a default limit of 2000 API calls per day</strong> (free plan). If you need to change this limit, check the information in the <a href="https://home.openweathermap.org/subscriptions">"Your account billing plans"</a> tab and update the standard settings.&#x20;</p>
@@ -1778,15 +1785,18 @@ If you are using Dark Sky API, check our easy-to-follow<a href="https://openweat
 <li>Provide a name for your new API Key.</li>
 </ol>
 <h3 id="making_your_first_api_call">Making Your First API Call<a class="headerlink" href="#making_your_first_api_call" title="Permanent link">#</a></h3>
-<p>{% hint style="info" %}
-<strong>Free plan calls limit</strong></p>
-<p _="%" endhint="endhint">The OpenWeather API free plan sets a default limit of 2000 API calls per day. If you need to change this limit, check the standard settings in <a href="https://home.openweathermap.org/subscriptions">Your account billing plans</a> tab.</p>
+<div class="admonition info">
+<p class="admonition-title">Free plan calls limit</p>
+<p>The OpenWeather API free plan sets a default limit of 2000 API calls per day. If you need to change this limit, check the standard settings in <a href="https://home.openweathermap.org/subscriptions">Your account billing plans</a> tab.</p>
+</div>
 <p><strong>After getting your API Key, you can make your first API call to request for current weather forecast</strong> for a specific latitude and longitude (<em>latitude=33.44 and longitude =-94.04</em> ).&#x20;</p>
 <p>The API call will look as follows:</p>
 <p><em><code>https://api.openweathermap.org/data/2.5/weather?lat=33.44&amp;lon=-94.04&amp;appid={API key}</code></em></p>
 <h4 id="reading_your_first_api_response"><strong>Reading Your First API Response</strong><a class="headerlink" href="#reading_your_first_api_response" title="Permanent link">#</a></h4>
-<p _="%" endhint="endhint">{% hint style="info" %}
-Parameters not showing in the API response indicate that the related weather phenomena just did not happen for the data of measurement provided.</p>
+<div class="admonition info">
+<p class="admonition-title">Parameters not showing</p>
+<p>Parameters not showing in the API response indicate that the related weather phenomena just did not happen for the data of measurement provided.</p>
+</div>
 <p><strong>For the previous API call,</strong> the API response (in JSON format) will look as follows:</p>
 <p>API response (JSON):</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JSON</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
