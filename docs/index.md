@@ -1,5 +1,7 @@
 # My API Documentation Portfolio  
-**Welcome to my GitHub repository showcasing API documentation samples** that I have created as part of my practice in technical writing. Please note that due to confidentiality agreements with my previous employers, these samples are *fictional* and not based on real-world projects. They are designed to demonstrate my ability to create clear, user-friendly, and structured API documentation.
+**Welcome to my GitHub repository showcasing API documentation samples** that I have created as part of my practice in technical writing.   
+
+**Please note that due to confidentiality agreements** with my previous employers, these samples are *fictional* or present my version of real-world publicly accessible documentation project to demonstrate my ability to create clear, user-friendly, and structured API documentation.
 
 ## Table of Contents
 

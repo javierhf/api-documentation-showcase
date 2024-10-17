@@ -9,9 +9,8 @@ description: >-
 
 # OpenWeather API
 
-{% hint style="info" %}
-**About this page**\
-This is my version of the public and official documentation of Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3).  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.&#x20;
+!!! info "About this page"  
+    This is my version of the public and official documentation of Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3).  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.
 
 If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
 {% endhint %}
@@ -46,9 +45,8 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 
 ### Resources: Endpoints and Methods
 
-{% hint style="info" %}
-Please note that One Call 3.0 is included in the "One Call by Call" subscription _ONLY_. [Learn more](https://openweathermap.org/price).
-{% endhint %}
+!!! warning "One Call 3.0 availability"  
+    Please note that One Call 3.0 is included in the "One Call by Call" subscription _ONLY_. [Learn more](https://openweathermap.org/price).
 
 **The root URL for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
 
@@ -539,11 +537,8 @@ If you are using Dark Sky API, check our easy-to-follow[ migration process.](htt
 
 
 
-{% hint style="info" %}
-**Free plan calls limit**
-
-The OpenWeather API free plan sets a default limit of 2000 API calls per day. If you need to change this limit, check the standard settings in [Your account billing plans](https://home.openweathermap.org/subscriptions) tab.
-{% endhint %}
+!!! info "Free plan calls limit"  
+    The OpenWeather API free plan sets a default limit of 2000 API calls per day. If you need to change this limit, check the standard settings in [Your account billing plans](https://home.openweathermap.org/subscriptions) tab.
 
 **After getting your API Key, you can make your first API call to request for current weather forecast** for a specific latitude and longitude (_latitude=33.44 and longitude =-94.04_ ).&#x20;
 
@@ -553,9 +548,8 @@ _`https://api.openweathermap.org/data/2.5/weather?lat=33.44&lon=-94.04&appid={AP
 
 #### **Reading Your First API Response**
 
-{% hint style="info" %}
-Parameters not showing in the API response indicate that the related weather phenomena just did not happen for the data of measurement provided.
-{% endhint %}
+!!! info "Parameters not showing"  
+    Parameters not showing in the API response indicate that the related weather phenomena just did not happen for the data of measurement provided.
 
 **For the previous API call,** the API response (in JSON format) will look as follows:
 

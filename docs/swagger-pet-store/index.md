@@ -11,13 +11,8 @@ description: >-
 
 
 
-{% hint style="info" %}
-**About this page**
-
-This is my version of the[`Swagger Pet Store API`](https://petstore.swagger.io/)`.`The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
-
-If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
-{% endhint %}
+!!! info "About this page"  
+    This is my version of the public and official documentation of [`Swagger Pet Store API`](https://petstore.swagger.io/).The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
 
 ### Overview
 
