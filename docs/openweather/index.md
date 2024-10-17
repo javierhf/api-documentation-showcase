@@ -33,9 +33,9 @@ If you want to create the product or project documentation your users will love,
 
 **One Call API 3.0 data** is available in JSON, XML, or HTML format.
 
-{% hint style="warning" %}
-If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
-{% endhint %}
+!!! warning "Dark Sky API users"  
+    If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
+
 
 ### _API Keys and Default API Calls_
 
@@ -510,9 +510,8 @@ with light to moderate winds from the west-southwest."
 
 **One Call API 3.0 data** is available in JSON, XML, or HTML format.
 
-{% hint style="warning" %}
-If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
-{% endhint %}
+!!! warning "Dark Sky API users"  
+    If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)  
 
 ### _API Keys and Default API Calls_
 

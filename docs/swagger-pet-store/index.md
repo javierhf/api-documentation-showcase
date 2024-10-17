@@ -12,7 +12,7 @@ description: >-
 
 
 !!! info "About this page"  
-    This is my version of the public and official documentation of [`Swagger Pet Store API`](https://petstore.swagger.io/).The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
+    This is my version of the public and official documentation of [Swagger Pet Store API](https://petstore.swagger.io/).The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.
 
 ### Overview
 

@@ -1,19 +1,8 @@
-# My API Documentation Portfolio  
-**Welcome to my GitHub repository showcasing API documentation samples** that I have created as part of my practice in technical writing.   
+# Technical-Write Me: API Documentation Portfolio    
 
-**Please note that due to confidentiality agreements** with my previous employers, these samples are *fictional* or present my version of real-world publicly accessible documentation project to demonstrate my ability to create clear, user-friendly, and structured API documentation.
+**Welcome to my API documentation repository. Here you will find API documentation samples** to demonstrate my knowledge, practice and ideas about successful documentation. 
 
-## Table of Contents
-
-- [My API Documentation Portfolio](#my-api-documentation-portfolio)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [API Documentation Samples](#api-documentation-samples)
-    - [Sample 1: Weather Forecast API](#sample-1-weather-forecast-api)
-    - [Sample 2: Pet Store API](#sample-2-pet-store-api)
-  - [How I Approach API Documentation](#how-i-approach-api-documentation)
-  - [About Me](#about-me)
-  - [Contact](#contact)
+**Due to confidentiality agreements** with my previous employers, these samples are *fictional* or present my version of real-world publicly accessible documentation project to demonstrate my ability to create clear, user-friendly, and structured API documentation.
 
 ## Overview
 
