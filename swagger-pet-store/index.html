@@ -1,0 +1,1383 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Disclaimer This is my version of the public and official documentation of the Swagger Pet Store API . The sole purpose of this page is to showcase my technical writing practice.">
+      
+      
+        <meta name="author" content="Javier Hernández Fernández">
+      
+      
+      
+        <link rel="prev" href="../openweather/">
+      
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.9">
+    
+    
+      
+        <title>Swagger Pet Store - Technical-Write Me API Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.78cf6014.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pet_store_api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Technical-Write Me API Docs" class="md-header__button md-logo" aria-label="Technical-Write Me API Docs" data-md-component="logo">
+      
+  <img src="../assets/cube.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Technical-Write Me API Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Swagger Pet Store
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/javierhf/technical-write-me" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../openweather/" class="md-tabs__link">
+          
+  
+  API Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Technical-Write Me API Docs" class="md-nav__button md-logo" aria-label="Technical-Write Me API Docs" data-md-component="logo">
+      
+  <img src="../assets/cube.png" alt="logo">
+
+    </a>
+    Technical-Write Me API Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/javierhf/technical-write-me" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    API Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            API Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openweather/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Openweather API
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Swagger Pet Store
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Swagger Pet Store
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pet_store_api_documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pet Store API Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pet Store API Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security_fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementing_oauth2_implicit_flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementing OAuth2 (Implicit Flow)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementing API Key
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming_soon_resources_endpoints_and_methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Coming soon!) Resources: Endpoints and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Coming soon!) Resources: Endpoints and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming_soon_request_parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Coming soon!) Request Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming_soon_response_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Coming soon!) Response Schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section_under_review_status_and_error_codes_handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Section under review!) Status and Error Codes Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Section under review!) Status and Error Codes Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pet" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petfindbystatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/findByStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petpetid" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/{petId}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storeorderorderid" class="md-nav__link">
+    <span class="md-ellipsis">
+      /store/order/{orderId}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pet_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petfindbystatus_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/findByStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petpetid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/{petId}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storeorderorderid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /store/order/{orderId}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pet_store_api_documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pet Store API Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pet Store API Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security_fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementing_oauth2_implicit_flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementing OAuth2 (Implicit Flow)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementing_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementing API Key
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming_soon_resources_endpoints_and_methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Coming soon!) Resources: Endpoints and Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Coming soon!) Resources: Endpoints and Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      /endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming_soon_request_parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Coming soon!) Request Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming_soon_response_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Coming soon!) Response Schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#section_under_review_status_and_error_codes_handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Section under review!) Status and Error Codes Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Section under review!) Status and Error Codes Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pet" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petfindbystatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/findByStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petpetid" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/{petId}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storeorderorderid" class="md-nav__link">
+    <span class="md-ellipsis">
+      /store/order/{orderId}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pet_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petfindbystatus_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/findByStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petpetid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /pet/{petId}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storeorderorderid_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      /store/order/{orderId}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="pet_store_api">Pet Store API<a class="headerlink" href="#pet_store_api" title="Permanent link">#</a></h1>
+<h2 id="pet_store_api_documentation">Pet Store API Documentation<a class="headerlink" href="#pet_store_api_documentation" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">About this page</p>
+<p>This is my version of the public and official documentation of <a href="https://petstore.swagger.io/">Swagger Pet Store API</a>.The sole purpose of this page is to showcase my technical writing practice and knowledge about how API works.</p>
+</div>
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h3>
+<p><strong>The Pet Store API is a REST API that provides a comprehensive set of endpoints and functionalities</strong> to manage your pet store business from pets, users, and orders.</p>
+<p><strong>The Pet Store API implements the following features:</strong></p>
+<ul>
+<li>reusable data structure,&#x20;</li>
+<li>request bodies, and security schemes.</li>
+</ul>
+<p><strong>The Pet Store API</strong> <strong>uses two types of authentication</strong>: <em>OAuth2</em> (operations requiring user-specific permissions) and <em>API Keys</em> (operations security).&#x20;</p>
+<p><strong>To work with the Pet Store API,</strong> we have designed the following endpoints:</p>
+<table><thead><tr><th width="278">Endpoint</th><th>Scope</th><th>Features</th></tr></thead><tbody><tr><td><code>/pet</code></td><td>Get all pets stored in your shop.</td><td>By default, updates occur every 2 minutes.</td></tr><tr><td><code>/pet/findByStatus</code></td><td>Get pets by status (<em>active</em>, <em>sold</em>, <em>reserved</em>, <em>incoming,</em> ).</td><td>Allows combined statuses, for example: <em>reserved</em> and <em>incoming.</em></td></tr><tr><td><code>pet/{petId}</code></td><td>Get pet by ID.</td><td><code>petId</code> format is customizable.</td></tr><tr><td><code>/store/inventory</code></td><td>Get all pets in the store's inventory.</td><td>By default, Inventory is sorted by status.</td></tr><tr><td><code>/store/order/</code></td><td>Get all orders of the store.</td><td>By default, last orders are shown first.</td></tr><tr><td><code>/store/order/{orderId}</code></td><td>Get order by ID.</td><td><code>orderId</code> format is customizable.</td></tr><tr><td><code>/user</code></td><td>Get all users of the store.</td><td>By default, users are updated every day (24 hours).</td></tr><tr><td><code>/user/login</code></td><td>Get all users currently logged in into the system.</td><td>By default, passwords are not shown. Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/logout</code></td><td>Get all logged-out users.</td><td>Access time is shown in the time zone of the current system.</td></tr><tr><td><code>/user/{username}</code></td><td>Ger user information by username.</td><td>Case sensitive</td></tr></tbody></table>
+
+<h3 id="security_fundamentals">Security Fundamentals<a class="headerlink" href="#security_fundamentals" title="Permanent link">#</a></h3>
+<p><strong>Regarding authentication and authorization</strong>, the Pet Store API uses <em>OAuth2</em> (operations requiring user-specific permissions) and <em>API Keys</em> (operations security). Check the following table for more information:</p>
+<table><thead><tr><th width="238">Security Method</th><th width="156">Scope</th><th>Description</th></tr></thead><tbody><tr><td><strong>OAuth2 (Implicit flow)</strong></td><td><code>write:pets</code><br><code>read:pets</code></td><td><p>OAuth2 is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.</p><p></p><p>The Pet Store API uses the implicit flow of OAuth2, which is suitable for public clients that cannot keep a secret (such as single-page applications).<br></p></td></tr><tr><td><strong>API Key</strong></td><td><em>N/A</em></td><td><p>API Key authentication is a simple way of securing access by including a key in the request header.</p><p><br>This method is typically used for server-to-server communication.</p></td></tr></tbody></table>
+
+<p><strong>Each security method is applied to specific</strong> <strong>endpoints</strong> as shown in the following table:</p>
+<table><thead><tr><th width="179">Security Method</th><th width="390">Endpoint</th><th>Scope</th></tr></thead><tbody><tr><td><strong>OAuth2 ('petstore_auth')</strong></td><td><code>/pet</code><br><code>/pet/findByStatus</code><br><code>/pet/findByTags</code><br><code>/pet/{petId}</code><br><code>/pet/{petId}</code><br><code>/store/order</code></td><td><code>write:pets</code><br><code>read:pets</code></td></tr><tr><td><strong>API Key ('api_key')</strong></td><td><code>/store/inventory</code><br><code>/pet/{petId}</code></td><td></td></tr></tbody></table>
+
+<h4 id="implementing_oauth2_implicit_flow">Implementing OAuth2 (Implicit Flow)<a class="headerlink" href="#implementing_oauth2_implicit_flow" title="Permanent link">#</a></h4>
+<table><thead><tr><th width="238">Topic</th><th>Information</th></tr></thead><tbody><tr><td><strong>Authorization URL</strong></td><td>https://petstore3.swagger.io/oauth/authorize></td></tr><tr><td><strong>Scopes</strong></td><td><code>write:pets</code>: Allows modification of pets in your account.<br><code>read:pets</code>: Allows reading your pets.</td></tr></tbody></table>
+
+<p><strong>To implement OAuth2 (Implicit flow)</strong> you have to <em>request authorization,</em> <em>receive the access token,</em> and <em>use the access token</em> as described in the following steps:</p>
+<ol>
+<li><strong>Request authorization:</strong>\
+   Redirect the user to the authorization URL with the required parameters (client ID, redirect URI, response type, and scope), for example:  <code>https://petstore3.swagger.io/oauth/authorize?client_id=&lt;YOUR_CLIENT_ID&gt;&amp;redirect_uri==&lt;YOUR_REDIRECT_URI&gt;&amp;response_type=token&amp;scope=write:pets read:pets</code></li>
+<li><strong>Receive access token:</strong></li>
+<li>After the user grants permission, they are redirected back to your application with the access token in the URL fragment.</li>
+<li>Extract the access token from the URL.</li>
+<li>
+<p><strong>Use access token:</strong>\
+    Include the access token in the ‘Authorization’ header for API requests, for example:\
+    <code>GET /pet HTTP/1.1</code></p>
+<p><code>Host: petstore3.swagger.io</code></p>
+<p><code>Authorization: Bearer ACCESS_TOKEN</code></p>
+</li>
+</ol>
+<h4 id="implementing_api_key">Implementing API Key<a class="headerlink" href="#implementing_api_key" title="Permanent link">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API Key parameters</strong></td>
+<td><p><strong><code>name: 'api_key'</code></strong><br><strong><code>location: 'header'</code></strong></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>To implement the API Key</strong> follow these steps:</p>
+<ol>
+<li><strong>Get the API Key:</strong>\
+   Get the API key from the API provider (usually through the API management portal).</li>
+<li><strong>Include the API key in your request:</strong>\
+   Add the API key to the request header, for example:\
+   <code>GET /pet/{petId} HTTP/1.1</code>\
+   <code>Host: petstore3.swagger.io</code>\
+   <code>api_key: YOUR_API_KEY</code>    \</li>
+</ol>
+<h3 id="coming_soon_resources_endpoints_and_methods"><em><mark style="color:orange;">(Coming soon!) Resources: Endpoints and Methods</mark></em><a class="headerlink" href="#coming_soon_resources_endpoints_and_methods" title="Permanent link">#</a></h3>
+<h4 id="endpoint"><code>/endpoint</code><a class="headerlink" href="#endpoint" title="Permanent link">#</a></h4>
+<p><em>Method description</em></p>
+<p><em>Sample Request</em></p>
+<p><em>Sample/Response Definitions Schema</em></p>
+<h3 id="coming_soon_request_parameters"><em><mark style="color:orange;">(Coming soon!)</mark></em> <em><mark style="color:orange;">Request Parameters</mark></em><a class="headerlink" href="#coming_soon_request_parameters" title="Permanent link">#</a></h3>
+<h3 id="coming_soon_response_schema"><em><mark style="color:orange;">(Coming soon!) Response Schema</mark></em><a class="headerlink" href="#coming_soon_response_schema" title="Permanent link">#</a></h3>
+<h3 id="section_under_review_status_and_error_codes_handling"><em><mark style="color:yellow;">(Section under review!)</mark></em> <mark style="color:yellow;">Status and Error Codes Handling</mark><a class="headerlink" href="#section_under_review_status_and_error_codes_handling" title="Permanent link">#</a></h3>
+<h4 id="pet"><code>/pet</code><a class="headerlink" href="#pet" title="Permanent link">#</a></h4>
+<p><em><strong>PUT</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Pet not found</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'422'</strong></td>
+<td>Validation exception</td>
+<td><em><mark style="color:orange;">TO DO</mark></em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>POST</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid input</td>
+<td><em>Review your input structure</em></td>
+</tr>
+<tr>
+<td><strong>'422'</strong></td>
+<td>Validation exception</td>
+<td><em><mark style="color:orange;">TO DO</mark></em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="petfindbystatus"><code>/pet/findByStatus</code><a class="headerlink" href="#petfindbystatus" title="Permanent link">#</a></h4>
+<p><em><strong>GET</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid status value</td>
+<td><em>Provide a valid status value</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="petpetid">/<code>pet/{petId}</code><a class="headerlink" href="#petpetid" title="Permanent link">#</a></h4>
+<p><em><strong>GET</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Pet not found</td>
+<td><em>N/A</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>POST</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>DELETE</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid pet value</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="storeorderorderid">/<code>store/order/{orderId}</code><a class="headerlink" href="#storeorderorderid" title="Permanent link">#</a></h4>
+<p><em><strong>GET</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Order not found</td>
+<td><em>N/A</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>DELETE</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'400'</td>
+<td>Invalid ID supplied</td>
+<td>Provide a valid ID</td>
+</tr>
+<tr>
+<td>'404'</td>
+<td>Order nor found</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pet_1"><code>/pet</code><a class="headerlink" href="#pet_1" title="Permanent link">#</a></h4>
+<p><em><strong>PUT</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Pet not found</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'422'</strong></td>
+<td>Validation exception</td>
+<td><em><mark style="color:orange;">TO DO</mark></em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>POST</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid input</td>
+<td><em>Review your input structure</em></td>
+</tr>
+<tr>
+<td><strong>'422'</strong></td>
+<td>Validation exception</td>
+<td><em><mark style="color:orange;">TO DO</mark></em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="petfindbystatus_1"><code>/pet/findByStatus</code><a class="headerlink" href="#petfindbystatus_1" title="Permanent link">#</a></h4>
+<p><em><strong>GET</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid status value</td>
+<td><em>Provide a valid status value</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="petpetid_1"><code>/pet/{petId}</code><a class="headerlink" href="#petpetid_1" title="Permanent link">#</a></h4>
+<p><em><strong>GET</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Pet not found</td>
+<td><em>N/A</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>POST</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>DELETE</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid pet value</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="storeorderorderid_1"><code>/store/order/{orderId}</code><a class="headerlink" href="#storeorderorderid_1" title="Permanent link">#</a></h4>
+<p><em><strong>GET</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'200'</strong></td>
+<td>Successful operation</td>
+<td><em>N/A</em></td>
+</tr>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Order not found</td>
+<td><em>N/A</em></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>DELETE</strong></em></p>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Description</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>'400'</strong></td>
+<td>Invalid ID supplied</td>
+<td><em>Provide a valid ID</em></td>
+</tr>
+<tr>
+<td><strong>'404'</strong></td>
+<td>Order not found</td>
+<td><em>N/A</em></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Javier Hernández Fernández
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "search.suggest"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
+      
+    
+  </body>
+</html>
