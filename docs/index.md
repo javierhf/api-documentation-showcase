@@ -1,10 +1,10 @@
-# Technical-Write Me: API Documentation Portfolio    
+# Technical-Write Me  
+## API Documentation Showcase      
+
+!!! info "Source and Scope"  
+    Due to confidentiality agreements with my previous employers, I'm not allowed to show samples of my previous works. The documentation samples you will find are *fictional* or present my version of real-world publicly accessible documentation projects.
 
 **Welcome to my API documentation repository. Here you will find API documentation samples** to demonstrate my knowledge, practice and ideas about successful documentation. 
-
-**Due to confidentiality agreements** with my previous employers, these samples are *fictional* or present my version of real-world publicly accessible documentation project to demonstrate my ability to create clear, user-friendly, and structured API documentation.
-
-## Overview
 
 **The samples in this repository are fictional representations of my ideas and practice**, illustrating my skills in showcase the important parts for an API documentation to be effective and successful.
 
