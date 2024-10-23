@@ -12,6 +12,8 @@
   - [How I Approach API Documentation](#how-i-approach-api-documentation)
   - [About Me](#about-me)
   - [Contact](#contact)
+    
+--------
 
 ## Overview
 

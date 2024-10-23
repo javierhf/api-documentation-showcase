@@ -1,9 +1,9 @@
 # Project information
-site_name: Technical-Write Me API Docs
+site_name: Technical-Write Me - My API documentation samples
 # site_url:
 site_author: Javier Hernández Fernández
 site_description: >-
-  API documentation showcase
+  My API documentation showcase as Senior Technical Writer and Documentation Manager.
 
 # Repository
 # repo_name: 
@@ -107,7 +107,6 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - API Documentation:   
-      - Openweather API: openweather/index.md
-      - Swagger Pet Store: swagger-pet-store/index.md
+  - Open Weather API: openweather/index.md  
+  - Swagger Pet Store: swagger-pet-store/index.md
   
