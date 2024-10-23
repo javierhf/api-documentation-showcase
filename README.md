@@ -7,7 +7,7 @@
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [API Documentation Samples](#api-documentation-samples)
-    - [Sample 1: Weather Forecast API](#sample-1-weather-forecast-api)
+    - [Sample 1: Open Weather API](#sample-1-open-weather-api)
     - [Sample 2: Pet Store API](#sample-2-pet-store-api)
   - [How I Approach API Documentation](#how-i-approach-api-documentation)
   - [About Me](#about-me)
@@ -21,17 +21,17 @@ Feel free to explore these examples to get an understanding of how I approach AP
 
 ## API Documentation Samples
 
-### Sample 1: Weather Forecast API
+### Sample 1: Open Weather API
 
 _TO DO_  
 
-**In this documentation, I provide my version of the OpenWeather API**...  
+**In this documentation, I provide my version of the Open Weather API**...  
 
 _TO DO_
 
 The documentation includes example requests and responses, error handling explanations, and relevant usage notes.
 
-👉 [View the full Weather Forecast API Documentation TO DO](link-to-weather-forecast-api-sample)
+👉 [View my version of the Open Weather API](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio/index)
 
 ### Sample 2: Pet Store API
 
@@ -43,7 +43,7 @@ _TO DO_
 
 The documentation includes data models, authentication requirements, and error responses.
 
-👉 [View the full Task Management API Documentation - TO DO](link-to-task-management-api-sample)
+👉 [View my version of the Pet Store Swagger API](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio/pet-store-api)
 
 ## How I Approach API Documentation
 
