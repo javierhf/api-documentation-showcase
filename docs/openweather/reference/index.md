@@ -26,7 +26,7 @@ description: >-
 **One Call API 3.0 is based on the proprietary OpenWeather Model** and provides 4 endpoints**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
 
 ## OpenWeather Once Call API 3.0 Reference Documentation
-### Resources: Endpoints and Methods
+### Endpoints and Methods
 
 **One Call API 3.0 contains 4 endpoints** providing access to various data as shown in the following table:
 

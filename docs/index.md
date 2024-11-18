@@ -1,3 +1,11 @@
+---
+title: My Technical Writer Portfolio
+description: >-
+  Disclaimer: The following pages contain my version of the public and official
+  documentation of the OpenWeather API. The sole purpose of this page is to
+  showcase my technical writing practice.
+---  
+
 # Technical-Write Me  
 ## Overview      
 
