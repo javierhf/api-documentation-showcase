@@ -1,5 +1,5 @@
 # Project information
-site_name: Technical-Write Me - My API documentation samples
+site_name: Technical-Write Me - API Documentation Samples
 # site_url:
 site_author: Javier Hernández Fernández
 site_description: >-
@@ -28,10 +28,13 @@ theme:
   language: en
   features:
     # - navigation.indexes
+    #- toc.integrate
+    - toc.follow
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.top
     - search.suggest
   palette:
     - scheme: default
@@ -106,7 +109,12 @@ markdown_extensions:
 # Plugins  
 # Page tree
 nav:
-  - Home: index.md
-  - Open Weather API: openweather/index.md  
-  - Swagger Pet Store: swagger-pet-store/index.md
-  
+  - Home: index.md  
+  - Open Weather API:   
+      - Overview: openweather/index.md    
+      - Getting Started: openweather/getting-started/index.md  
+      - Authentication and Authorization: openweather/authentication-authorization/index.md  
+      - Best Practices: openweather/best-practices/index.md  
+      - Glossary: openweather/glossary/index.md  
+      - API Reference: openweather/reference/index.md
+  - Swagger Pet Store: swagger-pet-store/index.md  

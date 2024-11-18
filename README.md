@@ -1,53 +1,14 @@
-# My API Documentation Portfolio  
-**Welcome to my GitHub repository showcasing API documentation samples** that I have created as part of my practice in technical writing. Please note that due to confidentiality agreements with my previous employers, these samples are *fictional* and not based on real-world projects. They are designed to demonstrate my ability to create clear, user-friendly, and structured API documentation.
+# Technical-Write Me  
+## API Documentation Showcase  
 
-## Table of Contents
+**Welcome to Technical-Write Me, my API documentation portfolio**. My name is Javier Hernández and I'm a Senior Technical Writer and Documentation Manager.   
 
-- [My API Documentation Portfolio](#my-api-documentation-portfolio)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [API Documentation Samples](#api-documentation-samples)
-    - [Sample 1: Open Weather API](#sample-1-open-weather-api)
-    - [Sample 2: Pet Store API](#sample-2-pet-store-api)
-  - [How I Approach API Documentation](#how-i-approach-api-documentation)
-  - [About Me](#about-me)
-  - [Contact](#contact)
-    
---------
+The following API documentation samples consist of my _version_ or _revamping_ of some publicly available API documentation sets to demonstrate my ability to create clear, effective, user-friendly, and structured API documentation.
 
-## Overview
 
-**The samples in this repository are fictional representations of my ideas and practice**, illustrating my skills in showcase the important parts for an API documentation to be effective and successful.
-
-Feel free to explore these examples to get an understanding of how I approach API documentation.
-
-## API Documentation Samples
-
-### Sample 1: Open Weather API
+## Crafting an Valuable and Effective API Documentation  
 
 _TO DO_  
-
-**In this documentation, I provide my version of the Open Weather API**...  
-
-_TO DO_
-
-The documentation includes example requests and responses, error handling explanations, and relevant usage notes.
-
-👉 [View my version of the Open Weather API](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio/index)
-
-### Sample 2: Pet Store API
-
-_TO DO_  
-
-**This sample demonstrates the API documentation for the Swagger Pet Store API**...
-
-_TO DO_  
-
-The documentation includes data models, authentication requirements, and error responses.
-
-👉 [View my version of the Pet Store Swagger API](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio/pet-store-api)
-
-## How I Approach API Documentation
 
 **When documenting APIs, I focus on:**
 

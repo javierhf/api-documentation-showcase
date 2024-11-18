@@ -1,5 +1,5 @@
 # Technical-Write Me  
-## API Documentation Showcase      
+## Overview      
 
 !!! info "Source and Scope"    
 
@@ -11,33 +11,35 @@
 
 Feel free to explore these examples to get an understanding of how I approach API documentation.
 
-## API Documentation Samples
-
-### Sample 1: Open Weather API
-
-_TO DO_  
-
-**In this documentation, I provide my version of the Open Weather API**...  
+## API Documentation Samples  
 
 _TO DO_
 
-The documentation includes example requests and responses, error handling explanations, and relevant usage notes.
+| API Name | Description | Approach | My Version | Source |  
+| --------- | ----------- | ----------- | ---------- | ------------ |  
+| OpenWeather - One Call 3.0 |  | Classic | [Here]() |  [OpenWeather original documentation]() |  
+| Swagger Pet Store | User Centered | [Here]() | [Swagger Pet Store]() |
 
-👉 [View my version of the Open Weather API](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio/index)
 
-### Sample 2: Pet Store API
+👉 
+
+## Crafting API Documentation  
+
+## Overview
+
+_TO DO_
+  
+### What is Your API's Business Value?  
 
 _TO DO_  
 
-**This sample demonstrates the API documentation for the Swagger Pet Store API**...
+### Who Are Your API's Users?  
 
 _TO DO_  
 
-The documentation includes data models, authentication requirements, and error responses.
+### Seeds of Effective API Documentation    
 
-👉 [View my version of the Pet Store Swagger API](https://technical-write-me.gitbook.io/javier-hernandez/readme/my-portfolio/pet-store-api)
-
-## How I Approach API Documentation
+_TO DO_    
 
 **When documenting APIs, I focus on:**
 
