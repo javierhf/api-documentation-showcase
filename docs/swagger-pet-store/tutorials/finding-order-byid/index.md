@@ -11,9 +11,9 @@ description: >-
 
 ## Prerequisites  
 
-- [] Requirement 1
-- [] Requirement 2
-- [] Required knowledge/skills
+- [ ] Requirement 1
+- [ ] Requirement 2
+- [ ] Required knowledge/skills
 
 ## Step-by-Step Instructions 
 
