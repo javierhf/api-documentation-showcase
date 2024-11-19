@@ -9,7 +9,7 @@ description: >-
 # OpenWeather - Once Call API 3.0
 
 !!! info "About this page"  
-    This is my version of the public and official documentation of Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3).  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.
+    This is my version of the public and official documentation of Openweather - [One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3).  I've applied a traditional reference style to disclose the API documentation.
 
      If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/).
 

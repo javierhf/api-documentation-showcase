@@ -111,10 +111,19 @@ markdown_extensions:
 nav:
   - Home: index.md  
   - Open Weather API:   
-      - Overview: openweather/index.md    
-      - Getting Started: openweather/getting-started/index.md  
-      - Authentication and Authorization: openweather/authentication-authorization/index.md  
-      - Best Practices: openweather/best-practices/index.md  
-      - Glossary: openweather/glossary/index.md  
-      - API Reference: openweather/reference/index.md
-  - Swagger Pet Store: swagger-pet-store/index.md  
+      - Conceptual Documentation:  
+          - Overview: openweather/index.md    
+          - Getting Started: openweather/getting-started/index.md  
+          - Authentication and Authorization: openweather/authentication-authorization/index.md  
+          - Best Practices: openweather/best-practices/index.md  
+          - Glossary: openweather/glossary/index.md  
+      - API Reference: openweather/reference/index.md  
+
+  - Swagger Pet Store:   
+      - Getting Started: swagger-pet-store/index.md    
+      - Tutorials: 
+         - Showing All Pets in my Store: swagger-pet-store/tutorials/show-all-pets/index.md   
+         - Finding Pets by Status: swagger-pet-store/tutorials/finding-pets-bystatus/index.md   
+         - Finding a Pet by ID: swagger-pet-store/tutorials/finding-pet-byid/index.md   
+         - Finding an Order by ID: swagger-pet-store/tutorials/finding-order-byid/index.md   
+      - API Reference: swagger-pet-store/index.md 

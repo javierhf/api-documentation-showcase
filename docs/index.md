@@ -20,8 +20,10 @@ description: >-
 | OpenWeather - One Call 3.0 | _Coming Soon!_ | Traditional reference style | [Here]() |  [OpenWeather original documentation]() |  
 | Swagger Pet Store | _Coming Soon!_ | User-centered design | [Here]() | [Swagger Pet Store]() |
 
-## About API Documetation  
-### What is API Documentation?
+## About API Documetation    
+
+### What is API Documentation?  
+
 **API documentation is a comprehensive set of documents designed to enable users to work efficiently with our API**. API documentation *must address two key audiences*, each with unique needs and goals as shown in the following table:  
 
 | Audience | Description | Goals |  
@@ -37,7 +39,7 @@ description: >-
 * Provide current users with comprehensive management capabilities  
 * Facilitate smooth technical integration and adoption
 
-### How to Structure API Documentation?  
+### API Documentation Structure  
 
 **API documentation discloses all the information users require to**:  
 
@@ -63,7 +65,7 @@ description: >-
 **To do so,** it is highly recommended to:  
 
 * Discuss your API's business value with stakeholders/product owners.
-* Study and learn to your API's specification and code.
+* Study and learn your API's specification and code.
 * Participate in design and development meetings from early stages.  
 * Know your users and their workflows.
   
@@ -71,7 +73,7 @@ description: >-
 
 **API Documentation is an iterative project** that needs to be review, test, and maintain on a regular basis.  
 
-**Check the following tabl**, to learn more about best practices:  
+**Check the following table**, to learn more about best practices:  
 
 | Practice | Goal/Benefit |  
 | ---------- | --------------- |  

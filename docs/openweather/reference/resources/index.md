@@ -9,41 +9,12 @@ description: >-
 
 # OpenWeather One Call API 3.0  
 
-## Overview
+## Resources: Endpoints and Methods
 
 !!! info "About this page"  
     This is my version of the public and official documentation of [Openweather - One Call API 3.0](https://docs.openweather.co.uk/api/one-call-3).  I've applied my technical writing practice regarding page layout and structure, text formatting, topic completeness, and information disclosure.
 
     If you want to create the product or project documentation your users will love, or improve the one you're already have, [drop me a message!](https://www.linkedin.com/in/javier-hernandez-fernandez/)
-
-
-**OpenWeather - One Call 3.0 API provides the following information:**
-
-* Essential weather data
-* Short-term and long-term forecasts
-* Aggregated weather data easily
-
-**One Call API 3.0 is based on the proprietary OpenWeather Model** and provides 4 endpoints**.** Our endpoints are _updated every 10 minutes_ to deliver accurate and up-to-date weather data.
-
-## Authentication and Authorization  
-
-_TO DO_
-
-### Authentication _(Coming soon!)_
-
-_TO DO_
-
-### Authorization _(Coming soon!)_  
-
-_TO DO_  
-
-## Rate Limits and Thresholds  
-
-**You can generate as many API keys as needed for your subscription.** We track the total usage from all of them.
-
-**One Call API 3.0 sets a default limit of 2000 API calls per day**. If you need to change this limit, please check the information in the ["your account billing plans"](https://home.openweathermap.org/subscriptions) tab and update the standard settings. For more information, read our documentation page.
-
-## Endpoints and Methods
 
 !!! warning "One Call 3.0 availability"  
     Please note that One Call 3.0 is included in the "One Call by Call" subscription _ONLY_. [Learn more](https://openweathermap.org/price).
@@ -54,12 +25,12 @@ _TO DO_
 
 **One Call API 3.0 data** is available in JSON, XML, or HTML format.
 
+**The root URL for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.  
+
 !!! warning "Dark Sky API users"  
-    If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)  
+    If you are using Dark Sky API, check our easy-to-follow[ migration process.](https://openweathermap.org/darksky-openweather-3)
 
-**The root URL for the API** is [https://api.openweathermap.org/data/3.0/opencall](https://api.openweathermap.org/data/3.0/opencall). In the following sections you will learn more about the One Call API 3.0 methods and endpoints.
-
-### `/onecall`
+### _**`/onecall`**_
 
 _Current and forecast data._
 
@@ -69,11 +40,8 @@ _Current and forecast data._
 
 <table><thead><tr><th width="162">Name</th><th width="143">Required</th><th>Description</th></tr></thead><tbody><tr><td><strong>lat</strong></td><td><em>Yes</em></td><td>Latitude, decimal (-90; 90).<br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>lon</strong></td><td><em>Yes</em></td><td>Longitude, decimal (-180; 180). <br><br>If you need the geocoder to automatic convert city names and zip-codes to geo coordinates and the other way around, please use our Geocoding API.</td></tr><tr><td><strong>appid</strong></td><td><em>Yes</em></td><td>Your unique API key (you can always find it on your account page under the "API key" tab).</td></tr><tr><td><strong>exclude</strong></td><td><em>No</em></td><td><p>By using this parameter you can exclude some parts of the weather data from the API response. <br><br>It should be a comma-delimited list (without spaces). </p><p><br>Available values: <em>current, minutely, hourly, daily, and alerts.</em></p></td></tr><tr><td><strong>units</strong></td><td><em>No</em></td><td>Units of measurement. <em>standard</em>, <em>metric</em> and <em>imperial</em> units are available.<br><br>If you do not use the <em>units</em> parameter, standard units will be applied by default.</td></tr><tr><td><strong>lang</strong></td><td><em>No</em></td><td>You can use the <em>lang</em> parameter to get the output in your language.</td></tr></tbody></table>
 
-**Request Example**  
-
-```  
-GET https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}  
-```
+**Request Example**\
+`https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}`
 
 **Response Example**
 
@@ -111,7 +79,7 @@ The sky is covered with overcast clouds, and there is no precipitation expected 
 }
 ```
 
-### `/timemachine`
+### _**`/timemachine`**_
 
 _Weather data for timestamp_.
 
@@ -123,9 +91,7 @@ _Weather data for timestamp_.
 
 **Request Example**
 
-```  
-https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API key}  
-```
+`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API key}`
 
 **Response Example**
 
@@ -368,7 +334,7 @@ https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API 
 
 ```
 
-### `/day_summary`
+### _**`/day_summary`**_
 
 _Aggregated weather data for a particular date from 2nd January 1979 till long-term forecast for 1,5 years ahead_.
 
@@ -380,10 +346,7 @@ _Aggregated weather data for a particular date from 2nd January 1979 till long-t
 
 **Request Example**
 
-```  
-https://api.openweathermap.org/data/3.0/onecall/day_summary?lat=39.099724&lon=-94.578331&date=2020-03-04&appid={API key}  
-```  
-
+`https://api.openweathermap.org/data/3.0/onecall/day_summary?lat=39.099724&lon=-94.578331&date=2020-03-04&appid={API key}`
 
 **Response Example**
 
@@ -454,7 +417,7 @@ https://api.openweathermap.org/data/3.0/onecall/day_summary?lat=39.099724&lon=-9
 }  
 ```
 
-### `/overview`
+### _**`/overview`**_
 
 _Weather overview information with a human-readable weather summary for today and tomorrow’s forecast, utilizing OpenWeather AI technologies_.
 
@@ -466,9 +429,7 @@ _Weather overview information with a human-readable weather summary for today an
 
 **Request Example**
 
-```  
-https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}  
-```
+_`https://api.openweathermap.org/data/3.0/onecall/overview?lon=-11.8092&lat=51.509865&appid={API key}`_
 
 **Response Example**
 
